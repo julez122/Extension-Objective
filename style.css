@@ -1,11 +1,13 @@
 #objective-counter {
-    font-weight: 600;
+    font-weight: 700;
     color: orange;
+    margin-right: 6px;
 }
 
 #generate-counter {
-    font-weight: 600;
+    font-weight: 700;
     color: orange;
+    margin-right: 30px;
 }
 
 .objective_block {
@@ -13,6 +15,13 @@
     align-items: center;
     column-gap: 5px;
     flex-wrap: wrap;
+}
+
+.objective_block.flex-container .menu_button {
+    width: fit-content;
+    font-size: 12px;
+    padding: 0 7px;
+    margin: 10px auto 15px;
 }
 
 .objective_prompt_block {
@@ -23,12 +32,28 @@
 }
 
 .objective_block_control {
-    align-items: baseline;
+    display: inline-block;
 }
 
 .objective_block_control small,
 .objective_block_control label {
     width: max-content;
+}
+
+.objective_block_control small {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#objective-tasks {
+    margin-block: 16px;
+    border-block: 1px solid var(--SmartThemeBorderColor);
+    padding-block: 25px;
+}
+
+#objective-task-add-first {
+    font-size: 12px;
+    margin: auto;
 }
 
 .objective-task-button {
@@ -40,6 +65,7 @@
     opacity: 0.7;
     align-items: center;
     justify-content: center;
+    font-size: 15px;
 
 }
 
@@ -56,6 +82,14 @@
     margin-bottom: 5px !important;
 }
 
+#objective-parent {
+    margin-top: 10px;
+}
+
+#objective-parent .objective-task-button {
+    font-size: 12px;
+}
+
 #objectiveExtensionPopout {
     top: unset;
 }
@@ -65,7 +99,12 @@
 }
 
 .objective_prompt_modal textarea {
-    max-height: 50vh;
-    max-height: 50dvh;
+    max-height: none;
     resize: vertical;
+    field-sizing: content;
+    margin-block: 15px;
+}
+
+.objective_prompt_block input {
+    font-size: 12px;
 }

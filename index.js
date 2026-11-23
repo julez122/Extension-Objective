@@ -337,7 +337,7 @@ class ObjectiveTask {
     addUiElement() {
         const template = `
         <div id="objective-task-label-${this.id}" class="flex1 checkbox_label alignItemsCenter">
-            <input id="objective-task-complete-${this.id}" type="checkbox">
+            <input id="objective-task-complete-${this.id}" type="checkbox" style="margin-left: 2px;">
             <span class="text_pole objective-task" style="display: block" id="objective-task-description-${this.id}" contenteditable>${this.description}</span>
             <div id="objective-task-delete-${this.id}" class="objective-task-button fa-solid fa-xmark fa-fw fa-lg" title="Delete Task"></div>
             <div id="objective-task-add-${this.id}" class="objective-task-button fa-solid fa-plus fa-fw fa-lg" title="Add Task"></div>
@@ -497,7 +497,7 @@ function onEditPromptClick() {
             <input id="objective-custom-prompt-delete" class="menu_button" type="submit" value="Delete Prompt" />
         </div>
         <hr class="m-t-1 m-b-1">
-        <small>Edit prompts used by Objective for this session. You can use {{objective}} or {{task}} plus any other standard template variables. Save template to persist changes.</small>
+        <small style="font-size: 10px; display: block; line-height: 1.5;">Edit prompts used by Objective for this session. You can use {{objective}} or {{task}} plus any other standard template variables. Save template to persist changes.</small>
         <hr class="m-t-1 m-b-1">
         <div>
             <label for="objective-prompt-generate">Generation Prompt</label>
