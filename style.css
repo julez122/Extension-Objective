@@ -108,3 +108,9 @@
 .objective_prompt_block input {
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+    #objectiveExtensionPopoutButton {
+        display: none;
+    }
+}
